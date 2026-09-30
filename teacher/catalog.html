@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog · Greenfield Library</title>
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body data-root=".." data-role="teacher">
+  <main class="content">
+    <div class="page-head">
+      <div>
+        <h1>Catalog</h1>
+        <p>Find a book, check if it is on the shelf, or reserve it.</p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <div class="search-input"><span data-icon="search"></span><label class="sr-only" for="q">Search</label><input class="input" id="q" type="search" placeholder="Title, author or subject"></div>
+      <select class="select" id="subject" aria-label="Subject"></select>
+      <select class="select" id="level" aria-label="Level"></select>
+      <select class="select" id="sort" aria-label="Sort"></select>
+      <label class="toggle"><input type="checkbox" id="avail">On the shelf now</label>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="book-grid" id="grid"></div>
+  </main>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/store.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/pages/user-catalog.js"></script>
+</body>
+</html>

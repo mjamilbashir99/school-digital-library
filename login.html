@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · Greenfield Library</title>
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body data-root=".">
+  <div class="auth">
+    <aside class="auth-aside">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="">
+        <div><div class="brand-name">Greenfield Library</div><div class="brand-sub">Greenfield Public School</div></div>
+      </a>
+      <blockquote>
+        “One child, one teacher, <span>one book</span>, one pen can change the world.”
+        <cite>— Malala Yousafzai</cite>
+      </blockquote>
+      <div class="shelf" aria-hidden="true">
+        <div class="spine" style="--c:#2C6E9B;--h:92px"></div>
+        <div class="spine" style="--c:#F2B134;--h:104px;--w:24px"></div>
+        <div class="spine" style="--c:#A34A35;--h:84px;--w:34px"></div>
+        <div class="spine" style="--c:#2E7D5B;--h:98px"></div>
+        <div class="spine" style="--c:#5B4A8B;--h:106px;--w:30px"></div>
+        <div class="spine" style="--c:#EEF2F7;--h:88px;--w:22px"></div>
+        <div class="spine lean" style="--c:#7F5427;--h:96px"></div>
+      </div>
+    </aside>
+
+    <main class="auth-main">
+      <div class="auth-card">
+        <a class="brand brand-mobile" href="index.html">
+          <img src="assets/logo.svg" alt="">
+          <div><div class="brand-name">Greenfield Library</div><div class="brand-sub">Greenfield Public School</div></div>
+        </a>
+        <h1>Welcome back</h1>
+        <p class="muted">Sign in to borrow, reserve and keep track of your books.</p>
+
+        <div class="role-tabs" id="role-tabs" role="tablist" aria-label="I am a"></div>
+        <div id="signed-in"></div>
+
+        <form id="login-form" novalidate>
+          <div class="form-error" id="login-error" hidden></div>
+          <div class="field">
+            <label for="user" id="user-label">Your name</label>
+            <select class="select" id="user"></select>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input class="input" id="password" type="password" autocomplete="current-password">
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+
+        <div class="demo-hint">
+          <span data-icon="info"></span>
+          <div>This is a demo. Every account uses the password <code>library123</code>. <button type="button" id="fill">Fill it in</button></div>
+        </div>
+        <p class="small" style="margin-top:20px;text-align:center"><a href="index.html">← Back to home</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/store.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/pages/login.js"></script>
+</body>
+</html>

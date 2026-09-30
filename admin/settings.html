@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings · Greenfield Library</title>
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body data-root=".." data-role="admin">
+  <main class="content">
+    <div class="page-head">
+      <div>
+        <h1>Settings</h1>
+        <p>Library rules that apply to every new loan.</p>
+      </div>
+    </div>
+    <div class="grid grid-main">
+      <section class="card">
+        <div class="card-head"><h2>Borrowing rules</h2></div>
+        <form id="settings-form" class="form-grid" novalidate>
+          <div class="field full"><label for="schoolName">School name</label><input class="input" id="schoolName" name="schoolName"></div>
+          <div class="field"><label for="loanDays">Loan period (days)</label><input class="input" id="loanDays" name="loanDays" type="number" min="1"></div>
+          <div class="field"><label for="finePerDay">Late fee per day (Rs)</label><input class="input" id="finePerDay" name="finePerDay" type="number" min="0"></div>
+          <div class="field"><label for="maxStudent">Books per student</label><input class="input" id="maxStudent" name="maxStudent" type="number" min="1"></div>
+          <div class="field"><label for="maxTeacher">Books per teacher</label><input class="input" id="maxTeacher" name="maxTeacher" type="number" min="1"></div>
+          <div class="full"><button class="btn btn-primary" type="submit">Save settings</button></div>
+        </form>
+      </section>
+      <div>
+        <section class="card">
+          <div class="profile-head" id="librarian"></div>
+        </section>
+        <section class="card">
+          <div class="card-head"><h2>Demo data</h2></div>
+          <p class="small muted">This prototype keeps everything in your browser. Resetting brings back the original books, members and loans.</p>
+          <button class="btn btn-danger-outline" id="reset" type="button"><span data-icon="repeat"></span>Reset demo data</button>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/store.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/pages/admin-settings.js"></script>
+</body>
+</html>

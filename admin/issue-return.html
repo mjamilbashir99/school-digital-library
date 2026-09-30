@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Issue & Return · Greenfield Library</title>
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body data-root=".." data-role="admin">
+  <main class="content">
+    <div class="page-head">
+      <div>
+        <h1>Issue &amp; Return</h1>
+        <p>Lend a book to a member, or check one back in.</p>
+      </div>
+    </div>
+    <div class="grid grid-2">
+      <section class="card" aria-labelledby="issue-h">
+        <div class="card-head"><h2 id="issue-h">Issue a book</h2><span class="small muted" id="loan-rule"></span></div>
+        <div class="step-block">
+          <div class="step"><span class="step-num">1</span>Choose a member</div>
+          <div id="member-pick"></div>
+        </div>
+        <div class="step-block">
+          <div class="step"><span class="step-num">2</span>Choose a book</div>
+          <div id="book-pick"></div>
+        </div>
+        <div class="issue-summary">
+          <div><div class="strong" id="due-text"></div><div class="muted" id="due-sub"></div></div>
+          <button class="btn btn-gold" id="issue-btn" type="button" disabled>Issue book</button>
+        </div>
+      </section>
+      <section class="card card-flush" aria-labelledby="return-h">
+        <div class="card-head"><h2 id="return-h">Return a book</h2><span class="small muted" id="return-count"></span></div>
+        <div style="padding:14px 20px 0"><div class="search-input"><span data-icon="search"></span><label class="sr-only" for="return-q">Search</label><input class="input" id="return-q" type="search" placeholder="Search by member, class or book"></div></div>
+        <div id="return-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/store.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/pages/admin-issue-return.js"></script>
+</body>
+</html>

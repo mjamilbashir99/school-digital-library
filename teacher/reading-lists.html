@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reading Lists · Greenfield Library</title>
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body data-root=".." data-role="teacher">
+  <main class="content">
+    <div class="page-head">
+      <div>
+        <h1>Reading Lists</h1>
+        <p>Recommend books to a class. Students see your lists on their dashboard.</p>
+      </div>
+      <div class="actions"><button class="btn btn-primary" type="button" data-new><span data-icon="plus"></span>New reading list</button></div>
+    </div>
+    <div id="mine"></div>
+    <h2 class="section" style="margin-top:36px">From other teachers</h2>
+    <div id="others"></div>
+  </main>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/store.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/pages/teacher-reading-lists.js"></script>
+</body>
+</html>

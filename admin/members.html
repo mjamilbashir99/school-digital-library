@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Members · Greenfield Library</title>
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body data-root=".." data-role="admin">
+  <main class="content">
+    <div class="page-head">
+      <div>
+        <h1>Members</h1>
+        <p>Students and teachers who can borrow from the library.</p>
+      </div>
+      <div class="actions"><button class="btn btn-primary" id="add-member" type="button"><span data-icon="plus"></span><span id="add-member-label">Add student</span></button></div>
+    </div>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <section class="card card-flush">
+      <div class="toolbar" style="padding:16px 20px 0">
+        <div class="search-input"><span data-icon="search"></span><label class="sr-only" for="q">Search</label><input class="input" id="q" type="search" placeholder="Name or card number"></div>
+        <select class="select" id="class-filter" aria-label="Class"></select>
+        <span class="count" id="count"></span>
+      </div>
+      <div id="table"></div>
+    </section>
+  </main>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/store.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/pages/admin-members.js"></script>
+</body>
+</html>

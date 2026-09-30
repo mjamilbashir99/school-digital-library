@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greenfield Library · Greenfield Public School</title>
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body data-root=".">
+  <section class="hero">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="">
+        <div><div class="brand-name">Greenfield Library</div><div class="brand-sub">Greenfield Public School</div></div>
+      </a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="login.html?role=admin">Librarian</a>
+        <a class="btn btn-gold" id="header-cta" href="login.html">Sign in</a>
+      </nav>
+    </header>
+
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">School digital library</div>
+        <h1>Every book in the school, <em>one search away.</em></h1>
+        <p class="lead">Find a book, see if it is on the shelf, reserve it when it's out, and keep track of what you've borrowed. Librarians run lending and returns from the same place.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="login.html?role=student"><span data-icon="cap"></span>I'm a student</a>
+          <a class="btn btn-light" href="login.html?role=teacher"><span data-icon="briefcase"></span>I'm a teacher</a>
+          <a class="btn btn-light" href="login.html?role=admin"><span data-icon="library"></span>Librarian</a>
+        </div>
+      </div>
+
+      <div class="shelf-art" aria-hidden="true">
+        <div class="shelf">
+          <div class="spine" style="--c:#2C6E9B;--h:118px"></div>
+          <div class="spine" style="--c:#F2B134;--h:132px;--w:24px"></div>
+          <div class="spine" style="--c:#A34A35;--h:104px;--w:34px"></div>
+          <div class="spine" style="--c:#2E7D5B;--h:126px"></div>
+          <div class="spine" style="--c:#EEF2F7;--h:112px;--w:22px"></div>
+          <div class="spine" style="--c:#5B4A8B;--h:136px;--w:30px"></div>
+          <div class="spine" style="--c:#7F5427;--h:98px"></div>
+          <div class="spine lean" style="--c:#2F7472;--h:122px;--w:26px"></div>
+        </div>
+        <div class="shelf">
+          <div class="spine" style="--c:#8E3A5E;--h:108px;--w:32px"></div>
+          <div class="spine" style="--c:#2B4F7E;--h:128px"></div>
+          <div class="spine" style="--c:#F7CD73;--h:116px;--w:22px"></div>
+          <div class="spine" style="--c:#4E6B2A;--h:134px;--w:30px"></div>
+          <div class="spine" style="--c:#334155;--h:102px"></div>
+          <div class="spine" style="--c:#C0392B;--h:124px;--w:24px"></div>
+          <div class="spine" style="--c:#2C6E9B;--h:112px;--w:34px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div><div class="num" id="n-titles">—</div><div class="lbl">Book titles</div></div>
+    <div><div class="num" id="n-copies">—</div><div class="lbl">Copies on our shelves</div></div>
+    <div><div class="num" id="n-members">—</div><div class="lbl">Students &amp; teachers</div></div>
+    <div><div class="num" id="n-issued">—</div><div class="lbl">Books being read now</div></div>
+  </div>
+
+  <section class="landing-section" id="features">
+    <div class="eyebrow">Built for the whole school</div>
+    <h2>One library, three ways in</h2>
+    <div class="features">
+      <article class="feature">
+        <div class="stat-icon gold"><span data-icon="cap"></span></div>
+        <h3>Students</h3>
+        <p class="muted">Browse the catalog and keep track of your books.</p>
+        <ul>
+          <li>See what's on the shelf right now</li>
+          <li>Reserve books that are out</li>
+          <li>Due dates, reminders and fines in one place</li>
+          <li>Reading lists from your teachers</li>
+        </ul>
+        <a class="btn btn-outline btn-sm" href="login.html?role=student">Student sign in</a>
+      </article>
+      <article class="feature">
+        <div class="stat-icon info"><span data-icon="briefcase"></span></div>
+        <h3>Teachers</h3>
+        <p class="muted">Borrow for your lessons and guide what your classes read.</p>
+        <ul>
+          <li>Higher borrowing limit</li>
+          <li>Build reading lists for a class</li>
+          <li>Lists appear on students' dashboards</li>
+          <li>See lists from other teachers</li>
+        </ul>
+        <a class="btn btn-outline btn-sm" href="login.html?role=teacher">Teacher sign in</a>
+      </article>
+      <article class="feature">
+        <div class="stat-icon success"><span data-icon="library"></span></div>
+        <h3>Librarians</h3>
+        <p class="muted">Run the whole collection from one dashboard.</p>
+        <ul>
+          <li>Issue and return in a few clicks</li>
+          <li>Automatic late fees</li>
+          <li>Reservation queue and member records</li>
+          <li>Printable reports</li>
+        </ul>
+        <a class="btn btn-outline btn-sm" href="login.html?role=admin">Librarian sign in</a>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">Greenfield Library · Greenfield Public School · Prototype screens with sample data</footer>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/store.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/pages/index.js"></script>
+</body>
+</html>
