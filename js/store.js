@@ -47,9 +47,12 @@
 
     init() {
       if (!read('books')) this.reset();
-      // Sample data saved before the school was renamed still carries the old name.
+      // Sample data saved before the school and librarian were renamed still carries the old names.
       const s = read('settings');
       if (s && s.schoolName === 'Greenfield Public School') write('settings', Object.assign(s, { schoolName: 'FG Public School Shorkot Cantt' }));
+      const users = read('users');
+      const librarian = users && users.find(u => u.id === 'L001' && u.name === 'Ayesha Khan');
+      if (librarian) { librarian.name = 'Wajahat Shahid'; write('users', users); }
     },
 
     reset() {

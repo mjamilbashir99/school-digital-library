@@ -171,7 +171,7 @@ window.SDL_SEED = (function () {
       added: D.add(today, -(BOOKS.length - i) * 7)
     }));
 
-    const users = [{ id: 'L001', name: 'Ayesha Khan', role: 'admin', title: 'Head Librarian', joined: D.add(today, -1400) }];
+    const users = [{ id: 'L001', name: 'Wajahat Shahid', role: 'admin', title: 'Head Librarian', joined: D.add(today, -1400) }];
     TEACHERS.forEach((t, i) => users.push({
       id: 'T' + pad(i + 1, 3), name: t[0], role: 'teacher', subject: t[1],
       roll: 'STF-' + pad(11 + i * 3, 3), joined: D.add(today, -900 + i * 40)
