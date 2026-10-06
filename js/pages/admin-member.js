@@ -11,7 +11,7 @@
     root.innerHTML = UI.empty('user', 'Member not found', 'This member may have been removed.', '<a class="btn btn-primary" href="members.html">Back to members</a>');
     return;
   }
-  document.title = `${member.name} · Greenfield Library`;
+  document.title = `${member.name} · Digital Library`;
 
   function render() {
     const loans = Store.loansFor(member.id);

@@ -150,7 +150,7 @@ window.SDL_SEED = (function () {
   ];
 
   const SETTINGS = {
-    schoolName: 'Greenfield Public School',
+    schoolName: 'FG Public School Shorkot Cantt',
     loanDays: 14,
     finePerDay: 5,
     maxStudent: 3,

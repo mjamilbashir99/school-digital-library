@@ -235,8 +235,8 @@
       app.innerHTML = `
         <aside class="sidebar" aria-label="Main navigation">
           <a class="brand" href="${Auth.homeFor(user)}">
-            <img src="${UI.url('assets/logo.svg')}" alt="">
-            <div><div class="brand-name">Greenfield Library</div><div class="brand-sub">${esc(s.schoolName)}</div></div>
+            <img src="${UI.url('assets/images/logo.png')}" alt="FG Public School logo">
+            <div><div class="brand-name">Digital Library</div><div class="brand-sub">${esc(s.schoolName)}</div></div>
           </a>
           <nav class="nav">
             <div class="nav-label">${ROLE_LABEL[user.role]} menu</div>

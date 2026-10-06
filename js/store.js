@@ -47,6 +47,9 @@
 
     init() {
       if (!read('books')) this.reset();
+      // Sample data saved before the school was renamed still carries the old name.
+      const s = read('settings');
+      if (s && s.schoolName === 'Greenfield Public School') write('settings', Object.assign(s, { schoolName: 'FG Public School Shorkot Cantt' }));
     },
 
     reset() {

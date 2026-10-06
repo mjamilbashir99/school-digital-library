@@ -1,4 +1,4 @@
-# Greenfield Library — School Digital Library
+# FG Public School Shorkot Cantt — Digital Library
 
 Front-end screens for a school library management system, built with plain HTML, CSS and JavaScript. There is no backend yet: all data is sample data kept in the browser's `localStorage`, so actions on one screen show up on the others.
 

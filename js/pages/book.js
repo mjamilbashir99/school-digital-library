@@ -14,7 +14,7 @@
     root.innerHTML = UI.empty('book', 'Book not found', 'It may have been removed from the catalog.', `<a class="btn btn-primary" href="${catalogUrl}">Back to catalog</a>`);
     return;
   }
-  document.title = `${book.title} · Greenfield Library`;
+  document.title = `${book.title} · Digital Library`;
 
   function patronActions() {
     const loan = Store.activeLoans().find(l => l.memberId === me.id && l.bookId === book.id);

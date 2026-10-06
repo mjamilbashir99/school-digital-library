@@ -23,7 +23,7 @@
   color: #fff;
 }
 .brand:hover { text-decoration: none; }
-.brand img { width: 40px; height: 40px; border-radius: 10px; box-shadow: 0 0 0 1px rgba(242, 177, 52, .35); }
+.brand img { width: 44px; height: 44px; object-fit: contain; flex-shrink: 0; }
 .brand-name { font-family: var(--font-head); font-weight: 700; font-size: 1rem; line-height: 1.2; }
 .brand-sub { font-size: .72rem; color: #9FB2C8; letter-spacing: .03em; }
 

@@ -3,7 +3,10 @@
   background: var(--navy-dark);
   background-image:
     radial-gradient(circle at 85% 20%, rgba(242, 177, 52, .18), transparent 45%),
-    linear-gradient(160deg, var(--navy) 0%, var(--navy-dark) 100%);
+    linear-gradient(160deg, rgba(30, 58, 95, .93) 0%, rgba(20, 42, 69, .88) 100%),
+    url("../assets/images/school-building.jpg");
+  background-size: cover;
+  background-position: center;
   color: #fff;
 }
 .site-header {
@@ -99,7 +102,10 @@
   background: var(--navy-dark);
   background-image:
     radial-gradient(circle at 20% 90%, rgba(242, 177, 52, .2), transparent 45%),
-    linear-gradient(160deg, var(--navy), var(--navy-dark));
+    linear-gradient(160deg, rgba(30, 58, 95, .9), rgba(20, 42, 69, .82)),
+    url("../assets/images/school-building.jpg");
+  background-size: cover;
+  background-position: center;
   color: #fff; padding: 40px 48px;
   display: flex; flex-direction: column; justify-content: space-between; gap: 32px;
 }

@@ -17,7 +17,7 @@
     const values = {};
     for (const f of fields) {
       const raw = form.elements[f].value.trim();
-      if (f === 'schoolName') { values[f] = raw || 'Greenfield Public School'; continue; }
+      if (f === 'schoolName') { values[f] = raw || 'FG Public School Shorkot Cantt'; continue; }
       const n = Number(raw);
       if (!Number.isInteger(n) || n < (f === 'finePerDay' ? 0 : 1)) {
         UI.toast('Please enter whole numbers (loan days and limits must be at least 1).', 'error');
